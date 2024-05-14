@@ -126,7 +126,7 @@ span{
 .ntg:hover::before{
     opacity:.5;
 }
-@media (min-width: 768px) {
+@media (min-width:992px) {
     .background_img{
         background:transparent;
     }
@@ -200,13 +200,22 @@ ul{
     color:white;
     
 }
+.img-size-2{
+    margin:25px 0px;
+
+}
 .modify-image{
-    height:50vh;
+    height:100vh;
 }
 .about-button{
     margin-top:50px;
 }
-
+.about-me-section{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
 
 
 .resume-container{
