@@ -18,7 +18,8 @@ body{
     font-weight:500;
     color:white;
 }
-.para-span:hover{
+.para-span:hover,
+.para-span.active{
     color:rgb(180, 130, 3) !important;
 }
 .para-span::after{
@@ -36,6 +37,20 @@ body{
     margin-right:10px;
     letter-spacing:0.5px;
 }
+.home{
+    color:goldenrod;
+}
+.home::after{
+    content:"";
+    position:absolute;
+    border:1px solid rgb(180, 130, 3);
+    border-radius:1px ;
+    height:0px;
+    width:100%;
+    opacity:1;
+    display:block;
+}
+.home
 .nav-link:hover{
     color: rgb(180, 130, 3) !important;
     text-shadow: 0 0 0.5 rgb(180, 130, 3),
@@ -48,6 +63,7 @@ body{
     width: 100%; 
     opacity:1;
 }
+
 .background{
     background:transparent !important;
 }
@@ -183,8 +199,8 @@ span{
 ul{
     margin:20px 10px;
     list-style-type: none;
-   
 }
+
 .about-list{
     
     right:20px;
@@ -215,6 +231,7 @@ ul{
     display:flex;
     justify-content:center;
     align-items: center;
+
 }
 
 
