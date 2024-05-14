@@ -1,0 +1,368 @@
+*{
+    
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background:black;
+}
+.logo{
+    margin-left:15px;
+}
+.navbar-nav{
+    margin-right:20px;
+}
+.para-span{
+    position:relative;
+    font-weight:500;
+    color:white;
+}
+.para-span:hover{
+    color:rgb(180, 130, 3) !important;
+}
+.para-span::after{
+    content:"";
+    position:absolute;
+    border:1px solid rgb(180, 130, 3);
+    border-radius:1px ;
+    height:0px;
+    width:0;
+    opacity:0;
+    display:block;
+    transition:all .5s ;
+}
+.nav-link{
+    margin-right:10px;
+    letter-spacing:0.5px;
+}
+.nav-link:hover{
+    color: rgb(180, 130, 3) !important;
+    text-shadow: 0 0 0.5 rgb(180, 130, 3),
+    1px 1px 2px rgb(180, 130, 3),
+    2px 2px 3px rgb(180, 130, 3),
+    3px 3px 3px rgb(180, 130, 3);
+    
+}
+.para-span:hover::after{
+    width: 100%; 
+    opacity:1;
+}
+.background{
+    background:transparent !important;
+}
+.background_img{
+    background-image:url("https://img.freepik.com/free-photo/young-sensitive-man-thinking_23-2149459707.jpg?size=626&ext=jpg&ga=GA1.1.278734113.1712431295&semt=ais_user");
+    height:100vh;
+    width:100vw;
+    background-size:cover;
+    display:flex;
+    justify-content:center;
+   
+    align-items:center;
+}
+.content{
+    text-align:center;
+    text-transform: uppercase;
+    color: white;
+}
+.para-1{
+    font-size:20px;
+    color:rgb(180, 130, 3);
+    font-weight:500;
+}
+span{
+    color:rgb(180, 130, 3);
+}
+.buttons{
+    margin-top:40px;
+}
+.butn-1{
+    padding:15px 35px;
+    background-color:rgb(180, 130, 3);
+    border:none;
+    color:white;
+    letter-spacing: 1px;;
+    border-radius:25px;
+    font-weight:600;
+    margin-right:20px;
+    transition:.4s;
+}
+.butn-2{
+    padding:15px 35px;
+    background:transparent;
+    border:2px solid white;
+    color:white;
+    border-radius:25px;
+    letter-spacing:1px;
+    font-weight:600;
+    transition:.4s;
+}
+.butn-1:hover{
+    background:transparent;
+    border:2px solid rgb(180, 130, 3);
+    color:rgb(180, 130, 3);
+}
+.butn-2:hover{
+    background-color:rgb(180, 130, 3);
+    border:none;
+}
+.image{
+    height:90vh;
+}
+.ntg{
+    position:relative;
+}
+.ntg::before{
+ content:'';
+ position:absolute;
+ height:750px;
+ background:black;
+ opacity:0;
+ transition:1s;
+ width:600px;
+ 
+}
+.ntg:hover::before{
+    opacity:.5;
+}
+@media (min-width: 768px) {
+    .background_img{
+        background:transparent;
+    }
+    .content{
+        text-align:start;
+    }
+
+}
+.logos{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    margin-top:50px;
+}
+.logo-img{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-right:20px;
+    height:50px;
+    width:50px;
+    border:1px solid white;
+    border-radius:50%;
+    padding:15px;
+   transition:all .5s;
+   cursor:pointer;
+}
+.fa-brands{
+    font-size:25px;
+}
+.logo-img:hover{
+    transform:translateY(-10px);
+}
+.logo-img:hover{
+    background:goldenrod;
+    box-shadow:
+     0 0 1px goldenrod,
+    1px 1px 2px goldenrod, 
+    2px 2px 3px goldenrod,
+    4px 4px 5px goldenrod,2px 2px 3px goldenrod;
+}
+.about-me-section{
+    color:white;
+    padding:20px 10px;
+}
+.about-headding{
+    font-weight:600;
+}
+.about-para{
+    color:grey;
+    font-size:18px;
+    margin:20px 0px;
+    }
+ul{
+    margin:20px 10px;
+    list-style-type: none;
+   
+}
+.about-list{
+    
+    right:20px;
+    margin:10px 0;
+    color:grey;
+    font-weight:600;
+    font-size:16px
+}
+.about-span{
+    font-size:18px;
+    font-weight:bold;
+    width:40px;
+    color:white;
+    
+}
+.modify-image{
+    height:50vh;
+}
+.about-button{
+    margin-top:50px;
+}
+
+
+
+.resume-container{
+    text-align:center;
+    color:white;
+    margin-top:50px;
+}
+.resume-h1{
+    text-shadow: 0 0 1px white,
+    2px 2px 4px white;
+}
+.box{
+    margin:10px;
+    color:white;
+    background:rgb(38, 38, 38);
+    border-radius:5px;
+    padding:20px 20px;
+    width:100%;
+    transition:.5s;
+}
+
+.resume-btn{
+    text-align:center;
+    margin:10px 0px;
+}
+.services-box{
+    padding:50px 0px;
+    padding-bottom:70px;
+    border-radius:0;
+    text-align:center;
+    cursor:pointer;
+    
+}
+.fa-solid{
+   font-size:30px;
+   margin-bottom:30px;
+}
+h4{
+    letter-spacing: 1px;
+    position:relative;
+    text-transform: uppercase;
+}
+h4::after{
+    content:"";
+    position:relative;
+    border:1px solid;
+    height:0;
+    display:block;
+    width:50px;
+    left:45%;
+    opacity:0;
+    top:20px;
+}
+.services-box:hover{
+    background:goldenrod;
+    color:black;
+    transform:translateY(-10px);
+    opacity:.8;
+}
+.skill-img{
+    height:100px;
+    width:100px;
+    transition:.5s;
+    margin-bottom:15px;
+    border-radius:5px;
+}
+.skill-box{
+    margin:20px 0;
+    cursor:pointer;
+    color:white;
+    text-align:center;
+}
+
+.skill-img:hover{
+    transform:translateY(-10px);
+}
+.contactme-content{
+    text-align:center;
+    margin:50px;
+}
+.contact-headding{
+    color:white;
+
+}
+.contact-headding-2{
+    position:relative;
+    font-weight:bold;
+    filter: blur(1px);
+    top:-20px;
+}
+
+.contact-logos{
+    height:250px;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    width:100%;
+    background:rgb(38, 38, 38);
+    color:white;
+    
+}
+.fa-regular{
+    font-size:30px;
+    margin-bottom:30px;
+}
+
+.msg-container{
+    background:white;
+    text-align:center;
+    padding:50px 0px;
+}
+input{
+    height:50px;
+    width:90%;
+    margin:10px 0px;
+    padding-left:10px;
+    border-radius:5px;
+}
+.img-container{
+    background:rgb(38,38,38);
+    height:100%;
+    text-align:center;
+}
+.msg-img{
+    height:82vh;
+    padding-right:10px;
+    margin-top:20px;
+}
+.grey{
+    background:rgb(38,38,38);
+    height:100%;
+    padding:20px 0px;
+    margin:20px 0px;
+}
+
+.about-h1{
+    color:white;
+    font-size:40px;
+    margin-top:15px;
+}
+.last-logos{
+    display:flex;
+   color:white;
+    justify-content:left;
+}
+.li-end{
+    font-size:20px;
+    color:white;
+    cursor:pointer;
+    margin:10px 0px;
+}
+.last-ul{
+    margin:20px 0px;
+}
+.last-para{
+    color:white;
+    font-size:22px;
+    text-align:center;
+}
